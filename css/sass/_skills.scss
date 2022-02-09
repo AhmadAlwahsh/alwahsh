@@ -1,0 +1,39 @@
+.skillsSection{
+    background-color: var(--main-color);
+    .container{
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(250px,1fr));
+            .skill{
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                text-align: center;
+                margin: 10px;
+                padding: 20px;
+                border-radius: 10px;
+                background-image: linear-gradient(315deg, var(--thr-color), var(--fth-color));
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                img{
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    filter: drop-shadow(-4px 12px 6px var(--black-color));
+                }
+                h3{
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
+}

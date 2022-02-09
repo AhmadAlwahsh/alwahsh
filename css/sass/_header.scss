@@ -1,0 +1,85 @@
+.header{
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 10%;
+    z-index: 9999;
+    @media (max-width:1100px) {
+            position: fixed;
+            height: 10%;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            top: auto;
+            background-color: var(--fth-color);
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        @media (max-width:1100px) {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .icon-box{
+            position: relative;
+            height: 50px;
+            width: 50px;
+            transition: 0.3s;
+            @media (max-width:1100px){
+                width: 40px;
+                height: 40px;
+            }
+            background-color: var(--thr-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: var(--white-color);
+                font-size: 20px;
+                position: absolute;
+            }
+            span{
+                @media (max-width:1100px){
+                    display: none;
+                }
+                opacity: 0;
+                background-color: var(--thr-color);
+                padding-right: 30px;
+                padding-left: 20px;
+                border-radius:20px 0 0 20px;
+                text-align: center;
+                transition: 0.3s;
+                z-index: -1;
+                color: var(--white-color);
+                font-weight: bold;
+                font-size: 15px;
+                height: 50px;
+                position: absolute;
+                right: 27px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover span{
+                opacity: 1;
+            }
+        }
+    }
+}
+.active{
+    background-color: var(--sec-color) !important;
+    span{
+        background-color: var(--sec-color) !important;
+    }
+}

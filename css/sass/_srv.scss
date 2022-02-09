@@ -1,0 +1,40 @@
+.srv{
+    background-color: var(--main-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .container{
+        .srv-box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            .srv-box{
+                padding: 30px;
+                display: flex;
+                background-color: var(--fth-color);
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                border-radius: 5px;
+                color: var(--white-color);
+                text-align: center;
+                i{
+                    color: var(--sec-color);
+                    font-size: 30px;
+                }
+                a{
+                    color: var(--sec-color);
+                }
+                h3{
+                    background-image: linear-gradient(90deg, var(--fif-color), var(--white-color));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-top: 10px;  
+                    line-height: 2;  
+                }
+            }
+        }
+    }
+}

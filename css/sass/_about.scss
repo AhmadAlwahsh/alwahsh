@@ -1,0 +1,169 @@
+.about {
+  background-color: var(--main-color);
+  .container {
+    display: flex;
+    flex-direction: column;
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .who {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white-color);
+        // align-items: center;
+        list-style: disc;
+        .ta3reef {
+          padding: 30px 10px;
+          span {
+            background-image: linear-gradient(
+              90deg,
+              var(--sec-color),
+              var(--fif-color),
+              var(--fth-color)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+        .tec-skills {
+          padding: 30px 10px;
+          flex-direction: column;
+          display: flex;
+          span {
+            color: var(--fif-color);
+            font-size: 25px;
+            padding-bottom: 20px;
+          }
+          ul {
+            list-style: disc;
+            li {
+              color: var(--sec-color);
+              span {
+                color: var(--white-color) !important;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .general {
+          padding: 30px 10px;
+          display: flex;
+          flex-direction: column;
+          span {
+            color: var(--fif-color);
+            font-size: 25px;
+            padding-bottom: 20px;
+          }
+          ul {
+            list-style: disc;
+            li {
+              color: var(--sec-color);
+              span {
+                color: var(--white-color) !important;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        border: var(--sec-color) solid 1px;
+        border-radius: 30px;
+        display: flex;
+        overflow: hidden;
+        &:hover h4 {
+          text-shadow: none;
+        }
+        &:hover::before {
+          transform: translateX(0);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transform: translateX(100%);
+          transition: all 0.3s ease-out;
+          background-color: var(--sec-color);
+        }
+        h4 {
+          z-index: 2;
+          text-align: center;
+          font-weight: bolder;
+          color: var(--white-color);
+          text-transform: uppercase;
+          margin-right: 20px;
+          text-shadow: 0px 0px 20px var(--black-color), 0px 0px 20px var(--black-color),
+            0px 0px 20px var(--black-color), 0px 0px 20px var(--black-color), 0px 0px 20px var(--black-color);
+        }
+        i {
+          z-index: 2;
+          right: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 20px;
+          width: 40px;
+          height: 40px;
+          background-color: var(--sec-color);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+}
+
+.padding4 {
+  position: relative;
+  bottom: 10px;
+}
+
+.quote {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: var(--transparent-color);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: var(--white-color);
+  .container {
+    position: relative;
+    q {
+      font-size: 30px;
+      margin-bottom: 20px;
+      display: block;
+      background-image: linear-gradient(90deg, var(--main-color), var(--thr-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    span {
+      font-weight: bolder;
+      color: var(--sec-color);
+    }
+  }
+}
